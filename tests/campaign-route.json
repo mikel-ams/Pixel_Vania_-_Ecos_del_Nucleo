@@ -1,0 +1,387 @@
+[
+  {
+    "goal": {
+      "x": 52,
+      "y": 145
+    },
+    "actions": [
+      {
+        "dir": -1,
+        "jump": false
+      },
+      {
+        "dir": -1,
+        "jump": false
+      },
+      {
+        "dir": -1,
+        "jump": false
+      },
+      {
+        "dir": -1,
+        "jump": false
+      },
+      {
+        "dir": -1,
+        "jump": false
+      },
+      {
+        "dir": -1,
+        "jump": false
+      },
+      {
+        "dir": -1,
+        "jump": false
+      },
+      {
+        "dir": -1,
+        "jump": false
+      },
+      {
+        "dir": -1,
+        "jump": true
+      },
+      {
+        "dir": -1,
+        "jump": false
+      },
+      {
+        "dir": -1,
+        "jump": false
+      },
+      {
+        "dir": -1,
+        "jump": false
+      },
+      {
+        "dir": -1,
+        "jump": false
+      },
+      {
+        "dir": -1,
+        "jump": false
+      },
+      {
+        "dir": -1,
+        "jump": false
+      },
+      {
+        "dir": -1,
+        "jump": false
+      },
+      {
+        "dir": -1,
+        "jump": false
+      },
+      {
+        "dir": -1,
+        "jump": false
+      },
+      {
+        "dir": -1,
+        "jump": false
+      },
+      {
+        "dir": -1,
+        "jump": false
+      },
+      {
+        "dir": -1,
+        "jump": false
+      },
+      {
+        "dir": -1,
+        "jump": false
+      },
+      {
+        "dir": -1,
+        "jump": false
+      },
+      {
+        "dir": -1,
+        "jump": false
+      },
+      {
+        "dir": -1,
+        "jump": false
+      },
+      {
+        "dir": -1,
+        "jump": false
+      },
+      {
+        "dir": -1,
+        "jump": false
+      }
+    ],
+    "initial": {
+      "x": 352,
+      "y": 145,
+      "width": 12,
+      "height": 15,
+      "vx": 0,
+      "vy": 0,
+      "grounded": false,
+      "facingRight": true,
+      "frame": 0,
+      "canDoubleJump": false,
+      "hasDoubleJump": false,
+      "respawnX": 352,
+      "respawnY": 145,
+      "coyote": 0,
+      "jumpBuffer": 0,
+      "kick": 0
+    }
+  },
+  {
+    "goal": {
+      "x": 680,
+      "y": 145
+    },
+    "actions": [
+      {
+        "dir": 1,
+        "jump": true
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": true
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": true
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": true
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      },
+      {
+        "dir": 0,
+        "jump": false
+      },
+      {
+        "dir": -1,
+        "jump": false
+      },
+      {
+        "dir": 0,
+        "jump": false
+      },
+      {
+        "dir": 1,
+        "jump": false
+      }
+    ],
+    "initial": {
+      "x": 55.668727450751994,
+      "y": 144.99,
+      "width": 12,
+      "height": 15,
+      "vx": -0.6080133428479998,
+      "vy": 0,
+      "grounded": true,
+      "facingRight": false,
+      "frame": 0,
+      "canDoubleJump": true,
+      "hasDoubleJump": true,
+      "respawnX": 352,
+      "respawnY": 145,
+      "coyote": 6,
+      "jumpBuffer": 0,
+      "kick": 0,
+      "blocked": false
+    }
+  }
+]

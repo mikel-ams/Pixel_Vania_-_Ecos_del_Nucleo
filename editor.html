@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#0c101b" />
+    <title>Editor de escenas · Pixel Vania</title>
+    <link rel="stylesheet" href="editor.css" />
+  </head>
+  <body>
+    <div class="editor-app">
+      <header class="topbar">
+        <div>
+          <small>PIXEL VANIA · TALLER DEL SECTOR 09</small>
+          <h1>Editor de escenas</h1>
+          <p>Diseña las 15 zonas y pruébalas al instante.</p>
+        </div>
+        <a href="index.html" class="back">← Volver al juego</a>
+      </header>
+      <div class="workspace">
+        <aside class="scene-panel" aria-label="Escenas y herramientas">
+          <div class="panel-heading">
+            <span>01 / 15</span><strong>ESCENAS</strong>
+          </div>
+          <div id="room-list" class="room-list" role="list"></div>
+        </aside>
+        <main class="editor-main">
+          <div class="scene-heading">
+            <div>
+              <span class="eyebrow">EDITANDO</span>
+              <h2 id="scene-title">Archivo oeste</h2>
+            </div>
+            <span id="scene-count">0 cambios</span>
+          </div>
+          <div class="canvas-card">
+            <div class="canvas-toolbar">
+              <span id="cursor-label">20 × 12 · 16px por bloque</span
+              ><span>Las piezas de misión están protegidas</span>
+            </div>
+            <div class="canvas-frame">
+              <canvas
+                id="scene-canvas"
+                width="320"
+                height="192"
+                aria-label="Mapa de la escena, 20 columnas por 12 filas"
+              ></canvas>
+            </div>
+            <div class="canvas-footer">
+              <span id="selected-label">Bloque seleccionado</span
+              ><span id="hint-label"
+                >Arrastra para pintar · botón derecho para borrar</span
+              >
+            </div>
+          </div>
+          <div class="tool-row" aria-label="Herramientas">
+            <button
+              type="button"
+              id="tool-brush"
+              data-tool="brush"
+              class="selected"
+            >
+              ✦ Pincel <kbd>B</kbd>
+            </button>
+            <button type="button" id="tool-fill" data-tool="fill">
+              ▦ Rellenar <kbd>F</kbd>
+            </button>
+            <button type="button" id="tool-erase" data-tool="erase">
+              ⌫ Borrar <kbd>E</kbd>
+            </button>
+            <button type="button" id="tool-pick" data-tool="pick">
+              ◎ Copiar <kbd>I</kbd>
+            </button>
+            <button type="button" id="btn-undo" title="Deshacer (Ctrl+Z)">
+              ↶ Deshacer
+            </button>
+            <button type="button" id="btn-redo" title="Rehacer (Ctrl+Shift+Z)">
+              ↷ Rehacer
+            </button>
+          </div>
+          <div class="meta-card">
+            <label
+              >Nombre de la escena<input
+                id="scene-name"
+                maxlength="50"
+                autocomplete="off"
+            /></label>
+            <label
+              >Ambiente<select id="scene-theme">
+                <option value="crypt">Cripta</option>
+                <option value="water">Acueducto</option>
+                <option value="garden">Jardín</option>
+                <option value="forge">Fundición</option>
+                <option value="ice">Glacial</option>
+                <option value="sky">Cielo</option>
+                <option value="core">Núcleo</option>
+              </select></label
+            >
+            <label class="story-field"
+              >Pensamiento de Vael<textarea
+                id="scene-story"
+                maxlength="400"
+                rows="3"
+              ></textarea>
+            </label>
+          </div>
+          <div class="save-bar">
+            <button type="button" id="btn-save" class="primary">
+              Guardar escenas
+            </button>
+            <a
+              id="btn-preview"
+              class="preview"
+              href="index.html?preview=0"
+              target="_blank"
+              rel="noopener"
+              >▶ Probar esta escena</a
+            >
+            <button type="button" id="btn-export">Exportar JSON</button>
+            <button type="button" id="btn-import">Importar JSON</button>
+            <input
+              id="import-file"
+              type="file"
+              accept="application/json,.json"
+              hidden
+            />
+            <button type="button" id="btn-reset-scenes">
+              Reponer mapas originales
+            </button>
+          </div>
+          <p id="editor-status" role="status" aria-live="polite">
+            Selecciona una pieza y toca el mapa para colocarla.
+          </p>
+        </main>
+        <aside class="palette-panel" aria-label="Biblioteca de piezas">
+          <div class="panel-heading">
+            <span>30 PIEZAS</span><strong>BIBLIOTECA</strong>
+          </div>
+          <p>Terreno, mejoras, cinco enemigos y objetos de la ciudad.</p>
+          <div id="palette"></div>
+          <div class="editor-note">
+            <strong>Escenas sin combate</strong>
+            <p>
+              Las cinco primeras zonas conservan su recorrido sin enemigos. Los
+              sellos, faros, puertas y objetos de misión están protegidos para
+              que la campaña siga siendo jugable.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <script src="src/world.js"></script>
+    <script src="src/scene-data.js"></script>
+    <script src="src/scene-editor.js"></script>
+  </body>
+</html>

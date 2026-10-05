@@ -1,0 +1,17 @@
+{
+  "name": "pixelvania-ecos-del-nucleo",
+  "version": "0.5.0",
+  "private": true,
+  "description": "Pixel Vania: editor de 15 escenas, 30 piezas y fondos persistentes con parallax",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "test": "node tests/world.test.cjs && node tests/gameplay.test.cjs && node tests/terrain.test.cjs && node tests/editor.test.cjs",
+    "build": "esbuild src/renderer.js --bundle --format=iife --minify --outfile=src/renderer.bundle.js"
+  },
+  "dependencies": {
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.10"
+  }
+}

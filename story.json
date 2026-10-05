@@ -1,0 +1,122 @@
+{
+  "title": "Pixel Vania: Ecos del Núcleo",
+  "intro": {
+    "title": "Una ciudad sin recuerdos",
+    "text": "Soy Vael-7. El Sector 9 se está apagando y LIRA me ha llamado. Buscaré las botas al oeste, cruzaré el cortafuegos y recuperaré un arma en la armería. Tres sellos protegen la Matriz.\n\nA: salto · B: pulso después de recoger el arma. A o B cierran mis mensajes. Tengo cinco unidades de vida."
+  },
+  "item_pickup": {
+    "title": "Botas de propulsión",
+    "text": "Ya puedo saltar dos veces. A o Espacio de nuevo en el aire. Volveré al este para cruzar el muro."
+  },
+  "victory": {
+    "title": "La memoria vuelve a casa",
+    "text": "Los ecos vuelven a la Matriz. LIRA reconstruye los recuerdos y NULL abandona el borrado. Vuelvo a ser el guardián de un hogar.\n\nHe completado las 15 escenas de Ecos del Núcleo."
+  },
+  "rooms": [
+    {
+      "name": "Archivo oeste",
+      "theme": "crypt",
+      "color": "#75f9dd",
+      "goal": "boots",
+      "text": "Aquí están las botas. Con ellas podré saltar otra vez en el aire."
+    },
+    {
+      "name": "Sala de control",
+      "theme": "crypt",
+      "color": "#75f9dd",
+      "goal": "travel",
+      "text": "LIRA sigue llamándome. Primero exploraré el archivo al oeste; después podré cruzar el muro."
+    },
+    {
+      "name": "Cortafuegos",
+      "theme": "crypt",
+      "color": "#b194ed",
+      "goal": "travel",
+      "text": "No hay vuelta atrás. Las botas me permitirán cruzar estos pinchos."
+    },
+    {
+      "name": "Acueducto de datos",
+      "theme": "water",
+      "color": "#78bdff",
+      "goal": "travel",
+      "text": "Los canales llevan recuerdos rotos. No tengo un arma: buscaré una armería antes de seguir."
+    },
+    {
+      "name": "Armería olvidada",
+      "theme": "crypt",
+      "color": "#ffd68c",
+      "goal": "weapon",
+      "text": "Ese cañón de pulso aún tiene energía. Lo necesito para abrir los sellos que protegen el Núcleo."
+    },
+    {
+      "name": "Taller de resonancia",
+      "theme": "forge",
+      "color": "#ffbb79",
+      "goal": "upgrade",
+      "text": "Un amplificador de resonancia. Si lo conecto al arma, cada disparo tendrá el doble de potencia."
+    },
+    {
+      "name": "Canal del primer eco",
+      "theme": "water",
+      "color": "#78bdff",
+      "goal": "seal",
+      "text": "Ahora sí puedo defenderme. Restauraré el sello azul y despejaré la salida."
+    },
+    {
+      "name": "Jardín de memoria",
+      "theme": "garden",
+      "color": "#a9f1b0",
+      "goal": "plate",
+      "text": "LIRA es el eco de quienes vivieron aquí. Esa placa verde parece alimentar el bloqueo."
+    },
+    {
+      "name": "Estación de recuperación",
+      "theme": "garden",
+      "color": "#bfffd3",
+      "goal": "heal",
+      "text": "Una estación médica. Si estoy herido, recargará mis cinco unidades de vida. Solo queda una carga; mientras no la necesite, seguirá disponible."
+    },
+    {
+      "name": "Fundición roja",
+      "theme": "forge",
+      "color": "#ffaa75",
+      "goal": "seal",
+      "text": "NULL intenta proteger la ciudad borrando sus recuerdos. El segundo sello puede detenerlo."
+    },
+    {
+      "name": "Galería glacial",
+      "theme": "ice",
+      "color": "#bcecff",
+      "goal": "key",
+      "text": "La llave criónica está arriba. Tendré que saltar entre las repisas para alcanzarla."
+    },
+    {
+      "name": "Bóveda del cerrojo",
+      "theme": "ice",
+      "color": "#8dd5ff",
+      "goal": "lock",
+      "text": "Este cerrojo reconoce la llave criónica. La llevaré al lector junto a la salida."
+    },
+    {
+      "name": "Observatorio",
+      "theme": "sky",
+      "color": "#c6aeff",
+      "goal": "seal",
+      "text": "El último sello conserva mi propia memoria. Yo fui el guardián de este lugar antes del apagón."
+    },
+    {
+      "name": "Reactor de latidos",
+      "theme": "forge",
+      "color": "#ffe090",
+      "goal": "timing",
+      "text": "El receptor solo acepta el pulso cuando brilla. Debo acertar en el momento justo y despejar la sala."
+    },
+    {
+      "name": "Matriz del Núcleo",
+      "theme": "core",
+      "color": "#ee85ac",
+      "goal": "final",
+      "text": "Ya tengo los tres sellos. Recuperaré la matriz para devolver a LIRA y a la ciudad sus recuerdos."
+    }
+  ]
+}

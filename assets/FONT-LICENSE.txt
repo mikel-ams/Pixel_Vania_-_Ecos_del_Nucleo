@@ -1,0 +1,2 @@
+PixelVania Pixel: fuente original de retícula 5×7 creada para este proyecto.
+Se permite usar, modificar y distribuir libremente junto con Pixel Vania.

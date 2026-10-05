@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#0c101b" />
+    <title>Pixel Vania · Ecos del Núcleo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="console">
+      <header class="masthead">
+        <div>
+          <span class="eyebrow">ECOS DEL NÚCLEO</span>
+          <h1>PIXEL<span>VANIA</span></h1>
+        </div>
+        <div class="system-status"><i></i> SECTOR 09</div>
+      </header>
+      <section class="game-shell" aria-label="Juego Pixel Vania">
+        <div class="status-bar">
+          <span id="room-label">02 / 15 · Sala de control</span>
+          <div>
+            <span id="ability-label">SALTO SIMPLE</span
+            ><button id="btn-pause" aria-label="Pausar juego">Ⅱ</button>
+          </div>
+        </div>
+        <div class="vitals-bar">
+          <span id="health-label">VIDA 5/5</span>
+          <div
+            id="health-bar"
+            role="progressbar"
+            aria-label="Vida"
+            aria-valuemin="0"
+            aria-valuemax="5"
+            aria-valuenow="5"
+          >
+            <div id="health-fill"></div>
+          </div>
+          <span id="weapon-label">SIN ARMA</span>
+        </div>
+        <div id="viewport-wrapper">
+          <canvas
+            id="gameCanvas"
+            width="320"
+            height="192"
+            aria-label="Vista del juego"
+          ></canvas>
+          <div id="overlay" class="overlay">
+            <div
+              class="dialog"
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="dialog-title"
+            >
+              <span id="dialog-tag" class="eyebrow">TRANSMISIÓN 001</span>
+              <h2 id="dialog-title">Ecos del Núcleo</h2>
+              <p id="dialog-text"></p>
+              <div class="dialog-controls" aria-label="Cerrar texto con A o B">
+                <button id="dialog-a" aria-label="A: continuar">A</button>
+                <span>A o B · continuar</span>
+                <button id="dialog-b" aria-label="B: continuar">B</button>
+              </div>
+              <button id="btn-start" class="primary">
+                Iniciar misión <span>→</span></button
+              ><button id="btn-new" class="secondary" hidden>
+                Nueva partida
+              </button>
+              <button id="btn-reset" class="secondary">
+                Restablecer juego e IA
+              </button>
+              <button id="btn-style" class="secondary">Aspecto: carmesí ↻</button>
+            </div>
+          </div>
+        </div>
+        <div class="mission-bar">
+          <span id="objective"
+            >OBJETIVO · Recupera las botas del archivo oeste</span
+          ><span id="progress">0 / 3 sellos</span>
+        </div>
+      </section>
+      <section
+        id="mobile-controls"
+        class="control-deck"
+        aria-label="Controles fuera de la vista del juego"
+      >
+        <div class="direction-controls">
+          <button
+            id="btn-left"
+            class="touch-btn direction"
+            aria-label="Mover a la izquierda"
+          >
+            ←</button
+          ><button
+            id="btn-right"
+            class="touch-btn direction"
+            aria-label="Mover a la derecha"
+          >
+            →</button
+          ><span>MOVER</span>
+        </div>
+        <div class="deck-center">
+          <span class="deck-line"></span
+          ><span id="checkpoint-label">VAEL—7</span
+          ><small id="engine-label">PIXEL SYSTEM</small>
+        </div>
+        <div class="action-controls">
+          <button
+            id="btn-jump"
+            class="touch-btn button-a"
+            aria-label="A: saltar"
+          >
+            A</button
+          ><button
+            id="btn-pulse"
+            class="touch-btn button-b"
+            aria-label="B: disparar pulso"
+          >
+            B</button
+          ><span>SALTO / PULSO</span>
+        </div>
+      </section>
+      <footer>
+        <span class="keyboard-hint"
+          >← → / A D · mover &nbsp; ESPACIO · saltar &nbsp; X / J · pulso</span
+        ><button id="btn-journal">Historia y mapa</button
+        ><a href="editor.html" class="editor-link">Editor de escenas</a
+        ><span class="keyboard-hint">ESC · pausa &nbsp; R · checkpoint</span>
+      </footer>
+    </main>
+    <script src="src/world.js"></script>
+    <script src="src/scene-data.js"></script>
+    <script src="src/adaptive-ai.js"></script>
+    <script src="src/engine.js"></script>
+    <script src="src/responsive.js"></script>
+    <script src="src/renderer.bundle.js"></script>
+  </body>
+</html>
